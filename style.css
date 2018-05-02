@@ -1,12 +1,17 @@
 html, body {
 	background-color: #2f90a0;
 	height: 100%;
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 30px;
 }
 .container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
 }
 .etch-a-sketch {
 	background: url(etch-a-sketch.jpg);
@@ -20,9 +25,51 @@ html, body {
 	top: 125px;
 	left: 119px;
 	display: grid;
-	grid-template: repeat(64, 1fr) / repeat(64, 1fr);
 }
 .square {
 	box-sizing: border-box;
-	/*border: 1px solid blue;*/
+}
+.change-grid {
+	position: absolute;
+	z-index: 5;
+	background-color: #2f90a0;
+	height: 10vh;
+	width: 100%;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid-size {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+#grid-size {
+	height: 1.3em;
+	width: 45%;
+	text-align: center;
+	border: none;
+	border-radius: 3px;
+}
+#button {
+	margin-top: 5px;
+	color: #01475d;
+	background: white;
+	border: none;
+	border-radius: 6px;
+    padding: 4px 6px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#button:hover {
+	background-color: #01475d;
+	color: white;
 }
