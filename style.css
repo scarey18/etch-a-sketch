@@ -1,0 +1,28 @@
+html, body {
+	background-color: #2f90a0;
+	height: 100%;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.etch-a-sketch {
+	background: url(etch-a-sketch.jpg);
+	height: 723px;
+	width: 993px;
+}
+.screen {
+	width: 758px;
+	height: 493px;
+	position: relative;
+	top: 125px;
+	left: 119px;
+	display: grid;
+	grid-template: repeat(64, 1fr) / repeat(64, 1fr);
+}
+.square {
+	box-sizing: border-box;
+	/*border: 1px solid blue;*/
+}
